@@ -1,0 +1,1 @@
+dotnet publish -r linux-x64 -o ./dist /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true --self-contained true

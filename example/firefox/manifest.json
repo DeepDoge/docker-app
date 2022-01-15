@@ -1,0 +1,24 @@
+{
+    "name": "firefox",
+    "friendlyName": "Mozilla Firefox",
+    "build": {
+        "from": [ "ubuntu" ],
+        "run": [ 
+            "apt update",
+            "apt install firefox -y" 
+        ],
+        "enviroment": {
+
+        },
+        "addToPATH": []
+    },
+    "run": {
+        "entryCommand": "firefox",
+        "bridge": {
+            "in": {},
+            "out": {
+                "firefox": "start-dockerapp-firefox"
+            }
+        }
+    }
+}
